@@ -1,0 +1,15 @@
+# Credentials
+setup/vm_passwords.csv
+setup/assignmet.txt
+setup/credentials.txt
+setup/vms.txt
+setup/deploy_vscodium.sh
+
+# OS files
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+setup/update_kubectl_kubeconfig.sh
