@@ -26,11 +26,6 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            capabilities:
-              drop:
-                - ALL
-              add:
-                - NET_BIND_SERVICE
           volumeMounts:
             - name: html
               mountPath: /var/www/html/index.html
@@ -69,11 +64,6 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            capabilities:
-              drop:
-                - ALL
-              add:
-                - NET_BIND_SERVICE
           volumeMounts:
             - name: html
               mountPath: /var/www/html/index.html
@@ -112,11 +102,6 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            capabilities:
-              drop:
-                - ALL
-              add:
-                - NET_BIND_SERVICE
           volumeMounts:
             - name: html
               mountPath: /var/www/html/index.html
