@@ -26,7 +26,6 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            readOnlyRootFilesystem: false
             capabilities:
               drop:
                 - ALL
@@ -70,7 +69,6 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            readOnlyRootFilesystem: false
             capabilities:
               drop:
                 - ALL
@@ -114,7 +112,6 @@ spec:
             - containerPort: 80
           securityContext:
             allowPrivilegeEscalation: false
-            readOnlyRootFilesystem: false
             capabilities:
               drop:
                 - ALL
