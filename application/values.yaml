@@ -1,0 +1,22 @@
+image:
+  repository: harbor.dataport.it-scholar.com/library/ah/mynginx
+  tag: v2
+
+frontend:
+  replicas: 1
+  service:
+    type: NodePort
+    port: 80
+    nodePort: 30090
+
+backend:
+  replicas: 1
+  service:
+    type: ClusterIP
+    port: 80
+
+database:
+  replicas: 1
+  service:
+    type: ClusterIP
+    port: 80

@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-frontend-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Frontend</title></head>
+    <body><h1>Frontend</h1></body>
+    </html>
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-backend-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Backend</title></head>
+    <body><h1>Backend</h1></body>
+    </html>
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-database-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head><title>Database</title></head>
+    <body><h1>Database</h1></body>
+    </html>
